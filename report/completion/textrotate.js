@@ -15,13 +15,13 @@ function textrotate_make_svg(el)
   // Create SVG
   var svg=document.createElementNS(SVGNS,'svg');
   svg.setAttribute('version','1.1');
-  svg.setAttribute('width',20);
-  svg.setAttribute('height',textWidth);
+  svg.setAttribute('width',40);
+  svg.setAttribute('height',textWidth + 150);
 
   // Add text
   var text=document.createElementNS(SVGNS,'text');
   svg.appendChild(text);
-  text.setAttribute('x',textWidth);
+  text.setAttribute('x',textWidth + 150);
   text.setAttribute('y',-textHeight/4);
   text.setAttribute('text-anchor','end');
   text.setAttribute('transform','rotate(90)');
